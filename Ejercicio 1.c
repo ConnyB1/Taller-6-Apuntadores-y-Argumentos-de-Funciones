@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int* crearArreglo(int n);
+int *crearArreglo(int n);
 void imprimirArreglo(int *ptr, int n);
 void multiplicarPorDos(int *ptr);
 void sumarAElementos(int *ptr, int n, int valor);
@@ -11,11 +11,11 @@ int main()
 {
     srand(time(NULL));
     int x = 10, valorASumar = 5;
-    int *ptr = &x, *arreglo;
+    int *ptr = &x;
 
     printf("Valor de x: %d\n", x);
     printf("ASpunta ptr: %d\n", *ptr);
-    *arreglo = crearArreglo(7);
+    int *arreglo = crearArreglo(7);
 
     multiplicarPorDos(ptr);
     printf("Valor de x después de multiplicar por dos: %d\n", x);
